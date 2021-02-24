@@ -1,4 +1,4 @@
-FROM python:3.8.7-alpine3.12
+FROM python:3.8.8-alpine3.13
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories && apk update && apk add --no-cache libcurl libxslt && \
     apk add --no-cache --virtual .build-dependencies g++ gcc musl-dev libxslt-dev jpeg-dev zlib-dev build-base curl-dev && \
     pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ python-dateutil && \

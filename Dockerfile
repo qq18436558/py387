@@ -12,4 +12,5 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
     pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ PyMySQL && \
     pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ pillow && \
     pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ redis && \
+    pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ requests && \
     apk del .build-dependencies && rm -rf /var/cache/* && rm -rf /root/.cache && rm -rf /root/.ash_history
